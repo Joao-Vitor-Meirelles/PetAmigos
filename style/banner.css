@@ -1,0 +1,41 @@
+.banner{
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.container__banner{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.banner__images {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.banner__images img {
+    width: 160px; /* Tamanho desejado */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--amarelo); /* Cor do botão */
+    color: var(--branco);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    box-shadow: 3px 3px gray;
+}

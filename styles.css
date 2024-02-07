@@ -1,0 +1,15 @@
+@import url(style/header.css);
+@import url(style/banner.css);
+
+:root{
+    --azul: #0283FA;
+    --amarelo: #FFC875;
+    --branco: #ffffff;
+    --preto: #000000;
+    --fonte-principal: "Montserrat";
+}
+
+body{
+    background: var(--azul);
+    font-family: var(--fonte-principal);
+}

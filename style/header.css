@@ -1,0 +1,68 @@
+.cabeçalho{
+    background-color: var(--amarelo);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.cabeçalho img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Para garantir que a margem funcione corretamente */
+}
+
+.cabeçalho__menu-hamburguer{
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/MenuFechado.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.5em;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer{
+    background-image: url("../img/MenuAberto.png")
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul);
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.container__botao{
+    display: none;
+}
+
+.lista-menu__item{
+    padding: 0.3em 0.7em;
+    background-color: var(--amarelo);
+    text-align: center;
+}
+
+.lista-menu__link {
+    display: block;
+    height: 45px;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    line-height: 50px; /* Centralizando verticalmente o texto */
+    box-shadow: 3px 3px 3px gray;
+}
